@@ -1,0 +1,13 @@
+{
+    "version": "0.1",
+    "words": [
+        "ancount",
+        "arcount",
+        "nscount",
+        "qclass",
+        "qdcount",
+        "qname",
+        "qtype",
+        "rcode"
+    ]
+}
