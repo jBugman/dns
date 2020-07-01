@@ -61,7 +61,7 @@ func Parse(packet []byte) (Message, error) {
 		// bytes 0-1
 		id: binary.BigEndian.Uint16(packet[0:2]),
 		// byte 2
-		qr:     (packet[2] & 0b10000000) > 0,
+		qr:     (packet[2] & 0b10000000) == 0,
 		opcode: (packet[2] & 0b01111000),
 		// TC
 		rd: (packet[2] & 0b00000001) > 0,
